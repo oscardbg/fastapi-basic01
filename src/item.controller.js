@@ -28,7 +28,7 @@ const deleteItem = (req, reply) => {
    reply.send({ message: `Item with id ${id} was deleted` });
 };
 
-const updateItem = (req, res) => {
+const updateItem = (req, reply) => {
    const { id } = req.params;
    const { userId, title, body } = req.body;
    items = items.map((item) =>
